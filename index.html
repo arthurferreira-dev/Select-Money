@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Money</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Select Money</h1>
+            <br>
+            <label for="money-select">Selecione sua Moeda</label> <br>
+            <select name="money-select" id="money-select" autocomplete="off" class="selects">
+                <option value="" selected>Selecione sua Moeda</option>
+                <option value="real">Real (R$)</option>
+                <option value="euro">Euro (€)</option>
+                <option value="dolar">Dólar (US$)</option>
+            </select>
+            <br>
+            <label for="money-added">Coloque seu Dinheiro (não coloque um valor verdadeiro!)</label> <br>
+            <input type="number" id="money-added">
+            <br>
+            <label for="money-convert">Converter para ...</label> <br>
+            <select name="money-convert" id="money-convert" autocomplete="off" class="selects">
+                <option value="" selected>Converter para ...</option>
+                <option value="realC">Real (R$)</option>
+                <option value="euroC">Euro (€)</option>
+                <option value="dolarC">Dólar (US$)</option>
+            </select>
+            <br>
+            <button id="enviar" onclick="Enviar()">
+                Enviar
+            </button>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-finally">
+            <p id="desc">Feito por Arthur Ferreira Dev</p>
+            <p id="flexibel"><a href="https://github.com/arthurferreira-dev" id="ad"><i class="ri-github-line"></i></a></p>
+        </div>
+    </footer>
+</body>
+</html>
